@@ -700,10 +700,10 @@ def parse_opt(known=False):
     """
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--t_weights", type=str,
-                        default=r"D:\Writing\yolov5\runs\train\exp13\weights\best.pt",
-                        help="initial weights path")
-    parser.add_argument("--t_cfg", type=str, default=r"yolov5x.yaml", help="model.yaml path")
+    # parser.add_argument("--t_weights", type=str,
+    #                     default=r"D:\Writing\yolov5\runs\train\exp13\weights\best.pt",
+    #                     help="initial weights path")
+    # parser.add_argument("--t_cfg", type=str, default=r"yolov5x.yaml", help="model.yaml path")
 
     parser.add_argument("--weights", type=str,
                         default=r"D:\Writing\yolov5\runs\train\exp13\weights\best.pt",
