@@ -20,6 +20,14 @@ Comprehensive experiments across publicly available benchmarks and physical depl
 
 ## Real-World Applications
 ![](https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/usv_res.png)
+Clear Daytime
+Fig. (a) illustrates our method's effectiveness in tracking surface vessels under ideal visibility. The domain-mixed expert system maintains stable detection confidences across varying boat orientations and wave patterns. The detection efficacy in this scenario originates from the pronounced chromatic and textural saliency of objects, which establishes robust feature discriminability for reliable classification. Key advantages include reduced sensitivity to sun glares and wake interference compared to conventional approaches, as evidenced by the consistent bounding box accuracy throughout the temporal sequence.
+
+\subsubsection{Foggy Conditions}
+As shown in Fig. (b), our architecture achieves reliable detection in reduced visibility conditions. In such scenarios, objects are subject to intense backlighting and haze occlusion, resulting in silhouette-like appearances with severely degraded color and texture information, thereby leading to the breakdown of conventional detection algorithms.  Our proposed FiLMN addresses the problems by preserving critical edge information while suppressing fog-induced artifacts, enabling accurate target localization even when vessel contours become partially obscured.  
+
+\subsubsection{Low-Light Night} Detection results in
+Fig. (c) demonstrates FiLMN's capability in nighttime operations. Under nighttime conditions, objects suffer from significant feature distribution shifts caused by background light interference, thereby rendering domain-specific training weights inadequate for such dynamically varying scenarios. In contrast, FiLMN adopts a domain-agnostic framework that dynamically selects attention mechanisms based on evolving feature patterns to recalibrate critical representations, demonstrating its enhanced robustness in these challenging environments. The framework successfully handles illumination variations and dark channel noise, maintaining detection consistency across different light levels. 
 
 ##  Installation
 Following the installation instructions as YOLO v5 [link](https://github.com/ultralytics/yolov5) 
