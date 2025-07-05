@@ -41,3 +41,8 @@ python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/
 ```
 python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --task golden_search --device 0
 ```
+
+##  Detecting Objects with FiLMN-S/FiLMN-X
+```
+python detect.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --source \your_path --device 0 --conf-thres [confidence determined by DTS]
+```
