@@ -40,14 +40,10 @@ python train.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yam
 ```
 
 ##  Validating FiLMN-S/FiLMN-X with DTS on RTTS/ExDark Dataset
-### Coarse Training
 ```
 python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --task golden_search --device 0
 ```
-### Fine Training
-```
-python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --task golden_search --device 0
-```
+
 
 ##  Detecting Objects with FiLMN-S/FiLMN-X
 ```
