@@ -16,7 +16,7 @@ Following the installation instructions as YOLO v5 [link](https://github.com/ult
 cd FiLMN\
 pip install -r requirements.txt
 ```
-##  Training FiLMN-S/FiLMN-x with C2F on RTTS/ExDark Dataset
+##  Training FiLMN-S/FiLMN-X with C2F on RTTS/ExDark Dataset
 ### Coarse Training
 ```
 python train.py --weights yolov5s.pt/yolov5x.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --epochs 30 --freeze [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23] --device 0
@@ -26,7 +26,7 @@ python train.py --weights yolov5s.pt/yolov5x.pt --cfg yolov5s.yaml/yolov5x.yaml 
 python train.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --epochs 10 --device 0
 ```
 
-##  Validating FiLMN-S/FiLMN-x with DTS on RTTS/ExDark Dataset
+##  Validating FiLMN-S/FiLMN-X with DTS on RTTS/ExDark Dataset
 ### Coarse Training
 ```
 python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --task golden_search --device 0
