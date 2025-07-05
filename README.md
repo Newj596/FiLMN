@@ -10,7 +10,7 @@ b) To resolve learning rate conflicts between pre-trained backbones and domain-s
 
 c) We propose a multi-iterative optimization method called DTS on the basis of the golden section selection mechanism. It replaces empirically predefined thresholds through a multi-stage iterative optimization framework to search the best confidence threshold for post-processing. This approach dynamically adapts to varying degradation patterns in adverse weather conditions, enhancing detection performance without manual parameter tuning and additional task-special subnet design required by existing methods as the one in \cite{liu2019adaptive}.
 ## Results
-<img src="https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/prs.png" height="250">
+<img src="https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/prs.png" height="150">
 
 ## Visual Results on RTTS Dataset (Foggy)
 ![](https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/fog_result.png)
