@@ -10,7 +10,8 @@ b) To resolve learning rate conflicts between pre-trained backbones and domain-s
 
 c) We propose a multi-iterative optimization method called DTS on the basis of the golden section selection mechanism. It replaces empirically predefined thresholds through a multi-stage iterative optimization framework to search the best confidence threshold for post-processing. This approach dynamically adapts to varying degradation patterns in adverse weather conditions, enhancing detection performance without manual parameter tuning and additional task-special subnet design required by existing methods.
 ## Results
-<img src="https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/prs.png" height="150" width="auto">
+![](https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/prs.png)
+Comprehensive experiments across publicly available benchmarks and physical deployments on USVs under clear, foggy, and dark conditions are conducted. The results demonstrate that our method achieves state-of-the-art (SOTA) performance. FiLMN achieves 3.8\% mAP50 gains in dense fog and 2.0\% in near-darkness over existing methods while maintaining robustness in clear weather conditions. It shows consistent accuracy improvements across three distinct degradation levels. 
 
 ## Visual Results on RTTS Dataset (Foggy)
 ![](https://raw.githubusercontent.com/Newj596/FiLMN/main/imgs/fog_result.png)
