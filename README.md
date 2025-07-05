@@ -12,7 +12,10 @@
 
 ##  Installation
 Following the installation instructions as YOLO v5 [link](https://github.com/ultralytics/yolov5) 
-
+```
+cd FiLMN\
+pip install -r requirements.txt
+```
 ##  Training FiLMN-S/FiLMN-x with C2F on RTTS/ExDark Dataset
 ### Coarse Training
 ```
