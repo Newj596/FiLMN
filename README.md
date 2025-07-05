@@ -56,8 +56,10 @@ python train.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yam
 python val.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --task golden_search --device 0
 ```
 
-
 ##  Detecting Objects with FiLMN-S/FiLMN-X
 ```
 python detect.py --weights best.pt --cfg yolov5s.yaml/yolov5x.yaml --data fog.yaml/light.yaml --source \your_path --device 0 --conf-thres [confidence determined by DTS]
 ```
+
+## Implementation Details
+The proposed FiLMN is written in PyTorch and based on the YOLO v5 branch of the ultralytics repository. Backbones are pre-trained on COCO dataset. Unless otherwise specified, YOLO v5x is employed as the backbone network throughout this work. To address the trade-off between computational precision and processing latency, we adopt FiLMN with five specialized attention networks. The modulation factor $\gamma$ in focal localization loss is empirically set to 1.2. Since FiLMN is trained in a two-step manner offered by C2F, we first train the attention blocks and detection head with a learning rate of 0.01. Then we fine-tune the overall framework with a lower learning rate of 0.0001. We employ the SGD optimizer to train the proposed network. The training procedure is conducted on an Nvidia RTX4070 GPU with a batch size of 8. In the testing phase, a, b, and \epsilon in DTS are empirically set as 0.01, 0.5, and 0.001, 
